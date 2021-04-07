@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculo Basal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="stylesheet" href="css/visual.css">
+   
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+  </head>
+  
+<body id="BGcor">
+  <header>
+    <h1 class="display-5 text-center" id="TituloCor" > Calculadora de Gasto Calórico basal </h1>
+    <p> </p>
+  </header>
+   
+<article>
+  <form id="formulario" onSubmit="pegarValores(); return false;">
+
+    <div class="row d-flex justify-content-center">
+  
+        <div class="col-sm-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Altura</span>
+            <input type="number" class="form-control" id="altura" placeholder="E qual a sua altura?" required>
+          </div>       
+        </div>
+  
+        <div class="col-sm-4">   
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Idade</span>
+            <input type="number" class="form-control" id="idade" placeholder="Insira sua idade" required>
+          </div>
+
+        </div>
+  
+      </div>
+  
+      <div class="row d-flex justify-content-center">    
+
+        <div class="col-sm-3">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Peso</span>
+            <input type="number" class="form-control" id="peso" placeholder="Qual seu peso?" required >
+          </div>
+
+        </div>
+  
+        <div class="col-sm-3">   
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Sexo</span>
+            <select required id="inputState" class="form-control" >
+              <option >Escolha...</option>
+              <option>Masculino</option>
+          <option>Feminino</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <p> </p>
+     <div class="text-center">
+    <button type="submit" class="btn btn-primary">Calcular</button>
+     </div>
+  </form>
+
+</article>
+    
+  <div class="text-center">
+    <p id="res"></p>
+  </div>
+  
+  <p>
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#textoArea" aria-expanded="false" aria-controls="collapseExample">
+      O que é gasto calórico basal?
+    </button>
+  </p>
+  <div class="collapse" id="textoArea">
+    <div class="card card-body col-sm-5">
+      Gasto calórico basal é o quanto de calorias que seu corpo gasta enquanto você está parado. Seja no computador, dormindo ou assistindo.
+    </div>
+  </div>
+
+  <footer >
+    <div class="footer text-center" id="footerFont">
+      <p>Projeto disponível no <a href="https://github.com/kurxz/calculadorabasal">Github</a> | KurXZ </p>
+    </div>
+  </footer>
+  
+    <script src="js/main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   
+   </body>
+     
+</html>
